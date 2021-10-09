@@ -1,4 +1,4 @@
-package observer;
+package pattern.observer;
 
 /**
  * 战队成员类：具体观察者类
@@ -20,6 +20,7 @@ public class Player implements Observer{
     public void setName(String name) {
         this.name = name;
     }
+
     @Override
     public String getName() {
         return this.name;
@@ -39,7 +40,7 @@ public class Player implements Observer{
      * @param acc 战队控制中心
      */
     @Override
-    public void beAttacked(AllyControlCenter acc) {
+    public void beAttacked(AbstractAllyControlCenter acc) {
         System.out.println(this.name + "被攻击！");
         acc.notifyObserver(name);
     }

@@ -1,11 +1,12 @@
-package observer;
+package pattern.observer;
 
 /**
  * 具体战队控制中心类：具体目标类
+ *
  * @author :WangMengHe
  * @since :2021-10-08 17:44
  **/
-public class ConcreteAllyControlCenter extends AllyControlCenter{
+public class ConcreteAllyControlCenter extends AbstractAllyControlCenter {
 
     /**
      * 具体的盟友控制中心

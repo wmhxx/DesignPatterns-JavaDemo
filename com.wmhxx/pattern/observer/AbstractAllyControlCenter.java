@@ -1,13 +1,14 @@
-package observer;
+package pattern.observer;
 
 import java.util.ArrayList;
 
 /**
  * 战队控制中心类：目标类
+ *
  * @author :WangMengHe
  * @since :2021-10-08 17:43
  **/
-public abstract class AllyControlCenter {
+public abstract class AbstractAllyControlCenter {
 
     /**
      * 战队名称
@@ -21,6 +22,7 @@ public abstract class AllyControlCenter {
     public void setAllyName(String allyName) {
         this.allyName = allyName;
     }
+
     public String getAllyName() {
         return this.allyName;
     }

@@ -1,21 +1,22 @@
-package observer;
+package pattern.observer;
 
 import java.util.Scanner;
 
 /**
- * 客户端测试
+ * 客户端测试-观察者模式
+ *
  * @author :WangMengHe
  * @since :2021-10-08 17:45
  **/
-public class Client_Main {
+public class ClientMain {
 
     public static void main(String[] args) {
         //定义观察目标对象
         System.out.println("请设置一个威风的联盟名称吧～");
         Scanner scanner = new Scanner(System.in);
-        AllyControlCenter acc = new ConcreteAllyControlCenter(scanner.next());
+        AbstractAllyControlCenter acc = new ConcreteAllyControlCenter(scanner.next());
         //定义四个观察者对象
-        Observer player1,player2,player3,player4;
+        Observer player1, player2, player3, player4;
         player1 = new Player("杨过");
         acc.join(player1);
         player2 = new Player("令狐冲");
@@ -27,5 +28,6 @@ public class Client_Main {
         System.out.println("----------------------------");
         //某成员遭受攻击
         player1.beAttacked(acc);
+        acc.quit(player1);
     }
 }
