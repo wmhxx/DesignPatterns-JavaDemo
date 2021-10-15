@@ -1,6 +1,8 @@
 package pattern.state;
 
 /**
+ * 客户端测试-状态模式
+ *
  * @author :WangMengHe
  * @since :2021-10-13 11:30
  **/
