@@ -1,7 +1,7 @@
 # DesignPatterns-JavaDemo
 设计模式相关demo实例，用于更加深入学习设计模式
 
-> 代码来源与书籍[《Design-Pattern-Java》](https://www.gitbook.com/book/quanke/design-pattern-java/) ，主要包含6个创建型模式、7个结构型模式、11个行为型模式
+> 代码来源于书籍[《Design-Pattern-Java》](https://www.gitbook.com/book/quanke/design-pattern-java/) ，主要包含6个创建型模式、7个结构型模式、11个行为型模式
 
 ### 创建型模式
 
